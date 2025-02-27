@@ -9,6 +9,11 @@
 #ifndef SORTING_H
 #define SORTING_H
 
+
+
+void sorting(int arr[], int size);
+
+
 /**
  * Sorts an array of integers in ascending order using the Bubble Sort algorithm
  * 
