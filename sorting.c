@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main(){
-    int array[] = {};
+      int size;
+    int array[size];
     int i = 0;
     int j = 0;
-    int size;
     printf("Enter size of the array: \n"); // for testing
     scanf("%d",&size);
-    for(i=0;i<=size;i++){
+    for(i=0;i<size;i++){
     printf("Enter array: \n");
     scanf("%d",&array[i]);
     }
@@ -24,7 +24,7 @@ int main(){
             i++;
             if( i < size - 1){
                 for(i=0;i<=size;i++){
-                printf("%ls",&array[i]);
+                printf("%d",array[i]);
                 }
                 return 0;
             }
