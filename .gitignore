@@ -65,6 +65,3 @@ __pycache__/
 .idea/
 *.swp
 *~
-
-# Student solution
-sorting.c
