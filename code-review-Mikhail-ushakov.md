@@ -1,0 +1,1 @@
+## rewrite name of file to "sorting.c", a ne to poluchish pizdi ot jurisa
