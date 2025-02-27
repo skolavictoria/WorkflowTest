@@ -1,6 +1,6 @@
 ## Workflow for Sorting Algorithms Assignment
 
-1. Create a branch with name dev-<student-name-surname>
+1. Create a branch with name dev-<student-name-surname-group>
 2. Git checkout <branch name>
 3. Do the task:
    - Read the TASK.md and README.md files carefully to understand the requirements
@@ -14,6 +14,7 @@
    git commit -m "Implement sorting algorithms"
    git push origin dev-<student-name-surname>
    ```
-5. Checkout to branch that was sent to you via the Discord bot
-6. create in that branch code-review-<your-name>.md file with the code review
+5. git fetch
+6. Checkout to branch that was sent to you via the Discord bot
+7. create in that branch code-review-<your-name>.md file with the code review
 and flowchart-review-<your-name>.md
