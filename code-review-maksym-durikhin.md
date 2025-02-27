@@ -13,3 +13,6 @@ It also checks for negative values ​​and prevents the allocation of an inval
 ## Sorting implementation
 
 Bubble sort is implemented correctly using a nested loop structure, the elements will swap until they are in ascending order.
+
+### But the are no comments :()
+
