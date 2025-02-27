@@ -2,7 +2,6 @@
 *.d
 
 # Object files
-*.o
 *.ko
 *.obj
 *.elf
@@ -24,8 +23,6 @@
 
 # Shared objects (inc. Windows DLLs)
 *.dll
-*.so
-*.so.*
 *.dylib
 
 # Executables
@@ -50,3 +47,24 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Compiled binaries and libraries
+*.o
+*.so
+test_manual
+libsorting.so
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Student solution
+sorting.c
