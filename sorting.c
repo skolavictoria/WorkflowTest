@@ -1,45 +1,37 @@
 #include <stdio.h>
 
-// Функция для обмена значениями
-void swap(int *a, int *b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-
-// Функция сортировки пузырьком
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        int swapped = 0;  // Флаг для оптимизации
-        for (int j = 0; j < n - i - 1; j++) {
+void bubble_sort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        int swapped = 0;
+        for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                swap(&arr[j], &arr[j + 1]);
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
                 swapped = 1;
             }
         }
-        if (!swapped) break; // Если не было обменов, массив уже отсортирован
+        if (!swapped) break;
     }
 }
 
-// Функция для вывода массива
-void printArray(int arr[], int size) {
+void print_array(int arr[], int size) {
     for (int i = 0; i < size; i++)
         printf("%d ", arr[i]);
     printf("\n");
 }
 
-// Главная функция
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(arr[0]);
 
     printf("Исходный массив:\n");
-    printArray(arr, n);
+    print_array(arr, size);
 
-    bubbleSort(arr, n);
+    bubble_sort(arr, size);
 
     printf("Отсортированный массив:\n");
-    printArray(arr, n);
+    print_array(arr, size);
     
     return 0;
 }
