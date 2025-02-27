@@ -1,0 +1,1 @@
+The code was written using GPT so there are no complaints, the only thing you could write yourself and everything is fine
