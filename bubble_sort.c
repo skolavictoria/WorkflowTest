@@ -1,16 +1,16 @@
 #include <stdio.h>
 
-void bubbleSort(int array[], int n) {
+void bubbleSort(int arr[], int size) {
     int i = 0; 
 
-    while (i < n - 1) { 
+    while (i < size - 1) { 
         int j = 0; 
 
-        while (j < n - i - 1) { 
-            if (array[j] > array[j + 1]) { 
-                int temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
+        while (j < size - i - 1) { 
+            if (arr[j] > arr[j + 1]) { 
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
             j += 1; 
         }
@@ -18,9 +18,9 @@ void bubbleSort(int array[], int n) {
     }
 }
 
-void printArray(int array[], int size) {
+void printArray(int arr[], int size) {
     for (int i = 0; i < size; i++) {
-        printf("%d ", array[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 }
