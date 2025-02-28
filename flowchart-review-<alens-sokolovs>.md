@@ -1,1 +1,0 @@
-flowchart is 7/10 , some litlle errors, buthe didn t just copy from chat gpt
